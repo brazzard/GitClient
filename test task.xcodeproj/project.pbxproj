@@ -12,8 +12,8 @@
 		623C8DE21EA90433009F7734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623C8DE01EA90433009F7734 /* Main.storyboard */; };
 		623C8DE41EA90433009F7734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623C8DE31EA90433009F7734 /* Assets.xcassets */; };
 		623C8DE71EA90433009F7734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623C8DE51EA90433009F7734 /* LaunchScreen.storyboard */; };
-		623C8DEF1EA90E99009F7734 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C8DEE1EA90E99009F7734 /* Authorization.swift */; };
 		623C8DF21EAA7FD2009F7734 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C8DF11EAA7FD2009F7734 /* SearchVC.swift */; };
+		623C8DF71EABA7C4009F7734 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C8DF61EABA7C4009F7734 /* Authorization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		623C8DE31EA90433009F7734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		623C8DE61EA90433009F7734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		623C8DE81EA90433009F7734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		623C8DEE1EA90E99009F7734 /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Authorization.swift; path = ../Authorization.swift; sourceTree = "<group>"; };
-		623C8DF11EAA7FD2009F7734 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchVC.swift; path = ../SearchVC.swift; sourceTree = "<group>"; };
+		623C8DF11EAA7FD2009F7734 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		623C8DF61EABA7C4009F7734 /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				623C8DDC1EA90433009F7734 /* AppDelegate.swift */,
-				623C8DEE1EA90E99009F7734 /* Authorization.swift */,
-				623C8DF11EAA7FD2009F7734 /* SearchVC.swift */,
-				623C8DDE1EA90433009F7734 /* AuthorizationVC.swift */,
-				623C8DE01EA90433009F7734 /* Main.storyboard */,
-				623C8DE51EA90433009F7734 /* LaunchScreen.storyboard */,
+				623C8DF41EABA776009F7734 /* Model */,
+				623C8DF31EABA752009F7734 /* ViewControllers */,
+				623C8DF81EABA84D009F7734 /* View */,
 				623C8DF01EA90FAF009F7734 /* Support files */,
 			);
 			path = "test task";
@@ -76,6 +74,32 @@
 				623C8DE81EA90433009F7734 /* Info.plist */,
 			);
 			name = "Support files";
+			sourceTree = "<group>";
+		};
+		623C8DF31EABA752009F7734 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				623C8DF11EAA7FD2009F7734 /* SearchVC.swift */,
+				623C8DDE1EA90433009F7734 /* AuthorizationVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		623C8DF41EABA776009F7734 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				623C8DF61EABA7C4009F7734 /* Authorization.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		623C8DF81EABA84D009F7734 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				623C8DE01EA90433009F7734 /* Main.storyboard */,
+				623C8DE51EA90433009F7734 /* LaunchScreen.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				623C8DEF1EA90E99009F7734 /* Authorization.swift in Sources */,
 				623C8DF21EAA7FD2009F7734 /* SearchVC.swift in Sources */,
 				623C8DDF1EA90433009F7734 /* AuthorizationVC.swift in Sources */,
 				623C8DDD1EA90433009F7734 /* AppDelegate.swift in Sources */,
+				623C8DF71EABA7C4009F7734 /* Authorization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

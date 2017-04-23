@@ -20,7 +20,13 @@ class Authorization: UIViewController {
                 DispatchQueue.main.async {
                    self.present(controller, animated: true, completion: nil) 
                 }
-            } 
+            } else {
+               DispatchQueue.main.async {
+                let alert = UIAlertController(title: "", message: "Unable to log in with provided credentials", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                }
+            }
         })
         
     }
