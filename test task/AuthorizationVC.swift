@@ -13,7 +13,8 @@ class Authorization: UIViewController {
     @IBOutlet var Password: UITextField!
 
     @IBAction func Submit(_ sender: Any) {
-        Auth.init().requestMaker(username: Login.text!, password: Password.text!, success:{ (response) in
+        Auth.init().userCredentialsMaker(username: Login.text!, password: Password.text!, success: { (user) in
+            Auth.shared.loginRequestMaker(userCredentials: user, url: Auth.shared.loginCheckUrl!, success:{ (response) in
             if response == 200 {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let controller = storyboard.instantiateViewController(withIdentifier: "Search")
@@ -27,6 +28,7 @@ class Authorization: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                 }
             }
+        })
         })
         
     }

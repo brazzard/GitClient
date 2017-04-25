@@ -11,8 +11,10 @@ import Foundation
 class Auth {
     
     var json: Any?
-    let url = URL(string: "https://api.github.com/user")
-    let searchUrl = URL(string: "https://api.github.com/search/repositories")
+    var url = URL?.self
+    var userCredentials: String?
+    
+    let loginCheckUrl = URL(string: "https://api.github.com/user")
     
     
     static let shared = Auth()
@@ -29,18 +31,23 @@ class Auth {
         task.resume()
     }
     
-    func requestMaker(username: String, password: String, success: @escaping (_ response: Int) -> Void)  {
-        let loginString = username + ":" + password
-        let loginData = loginString.data(using: String.Encoding.utf8)!
-        let base64LoginString = loginData.base64EncodedString()
-        var request = URLRequest(url: self.url!)
+    func loginRequestMaker(userCredentials: String, url: URL, success: @escaping (_ response: Int) -> Void)  {
+        var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
+        request.setValue("Basic \(userCredentials)", forHTTPHeaderField: "Authorization")
         request.setValue("application/vnd.github.v3+json", forHTTPHeaderField: "Accept")
         login(request: request, success:{ (json) in
             success(json)
         })
     }
+    
+    func userCredentialsMaker(username: String, password: String, success: @escaping (_ user: String) -> Void) {
+        let loginString = username + ":" + password
+        let loginData = loginString.data(using: String.Encoding.utf8)!
+        userCredentials = loginData.base64EncodedString()
+        success(userCredentials!)
+    }
+    
     
     
 }

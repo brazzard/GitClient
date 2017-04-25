@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620703BC1EAF7AE800A462C9 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620703BB1EAF7AE800A462C9 /* Search.swift */; };
 		623C8DDD1EA90433009F7734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C8DDC1EA90433009F7734 /* AppDelegate.swift */; };
 		623C8DDF1EA90433009F7734 /* AuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C8DDE1EA90433009F7734 /* AuthorizationVC.swift */; };
 		623C8DE21EA90433009F7734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623C8DE01EA90433009F7734 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		620703BB1EAF7AE800A462C9 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		623C8DD91EA90433009F7734 /* test task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		623C8DDC1EA90433009F7734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		623C8DDE1EA90433009F7734 /* AuthorizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationVC.swift; sourceTree = "<group>"; };
@@ -79,8 +81,8 @@
 		623C8DF31EABA752009F7734 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				623C8DF11EAA7FD2009F7734 /* SearchVC.swift */,
 				623C8DDE1EA90433009F7734 /* AuthorizationVC.swift */,
+				623C8DF11EAA7FD2009F7734 /* SearchVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				623C8DF61EABA7C4009F7734 /* Authorization.swift */,
+				620703BB1EAF7AE800A462C9 /* Search.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				623C8DF21EAA7FD2009F7734 /* SearchVC.swift in Sources */,
 				623C8DDF1EA90433009F7734 /* AuthorizationVC.swift in Sources */,
+				620703BC1EAF7AE800A462C9 /* Search.swift in Sources */,
 				623C8DDD1EA90433009F7734 /* AppDelegate.swift in Sources */,
 				623C8DF71EABA7C4009F7734 /* Authorization.swift in Sources */,
 			);
@@ -342,6 +346,7 @@
 				623C8DED1EA90433009F7734 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
