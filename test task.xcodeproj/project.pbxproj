@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		620703BC1EAF7AE800A462C9 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620703BB1EAF7AE800A462C9 /* Search.swift */; };
+		620703BE1EAFF13200A462C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620703BD1EAFF13200A462C9 /* Constants.swift */; };
 		623C8DDD1EA90433009F7734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C8DDC1EA90433009F7734 /* AppDelegate.swift */; };
 		623C8DDF1EA90433009F7734 /* AuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C8DDE1EA90433009F7734 /* AuthorizationVC.swift */; };
 		623C8DE21EA90433009F7734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623C8DE01EA90433009F7734 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		620703BB1EAF7AE800A462C9 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		620703BD1EAFF13200A462C9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		623C8DD91EA90433009F7734 /* test task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		623C8DDC1EA90433009F7734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		623C8DDE1EA90433009F7734 /* AuthorizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationVC.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				623C8DE31EA90433009F7734 /* Assets.xcassets */,
 				623C8DE81EA90433009F7734 /* Info.plist */,
+				620703BD1EAFF13200A462C9 /* Constants.swift */,
 			);
 			name = "Support files";
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				620703BC1EAF7AE800A462C9 /* Search.swift in Sources */,
 				623C8DDD1EA90433009F7734 /* AppDelegate.swift in Sources */,
 				623C8DF71EABA7C4009F7734 /* Authorization.swift in Sources */,
+				620703BE1EAFF13200A462C9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

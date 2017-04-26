@@ -45,6 +45,7 @@ class Auth {
         let loginString = username + ":" + password
         let loginData = loginString.data(using: String.Encoding.utf8)!
         userCredentials = loginData.base64EncodedString()
+        UserDefaults.standard.set(userCredentials, forKey: "UserToken")
         success(userCredentials!)
     }
     
