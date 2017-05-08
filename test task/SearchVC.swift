@@ -20,7 +20,7 @@ class Search: UIViewController {
     }
     
   @objc func timerDelay() {
-        var query = URL(string: String(describing: RealTimeSearch.shared.searchUrl!) + self.SearchOutlet.text!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)
+        let query = URL(string: String(describing: RealTimeSearch.shared.searchUrl!) + self.SearchOutlet.text!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)
         let usertoken = UserDefaults.standard.string(forKey: "UserToken")
         RealTimeSearch.init().searchRequestMaker(userCredentials: usertoken!, url: query!, success: { (response) in
             
