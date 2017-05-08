@@ -18,9 +18,9 @@ class Authorization: UIViewController {
             if response == 200 {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let controller = storyboard.instantiateViewController(withIdentifier: "Search")
-                DispatchQueue.main.async {
-                   self.present(controller, animated: true, completion: nil) 
-                }
+               // DispatchQueue.main.async {
+             //      self.present(controller, animated: true, completion: nil)
+            //    }
             } else {
                DispatchQueue.main.async {
                 let alert = UIAlertController(title: "", message: "Unable to log in with provided credentials", preferredStyle: UIAlertControllerStyle.alert)

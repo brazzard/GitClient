@@ -16,6 +16,7 @@
 		623C8DE71EA90433009F7734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623C8DE51EA90433009F7734 /* LaunchScreen.storyboard */; };
 		623C8DF21EAA7FD2009F7734 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C8DF11EAA7FD2009F7734 /* SearchVC.swift */; };
 		623C8DF71EABA7C4009F7734 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C8DF61EABA7C4009F7734 /* Authorization.swift */; };
+		6245E9211EB7D69D006666BA /* MyRepositoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6245E9201EB7D69D006666BA /* MyRepositoriesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		623C8DE81EA90433009F7734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		623C8DF11EAA7FD2009F7734 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		623C8DF61EABA7C4009F7734 /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		6245E9201EB7D69D006666BA /* MyRepositoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRepositoriesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				623C8DDE1EA90433009F7734 /* AuthorizationVC.swift */,
 				623C8DF11EAA7FD2009F7734 /* SearchVC.swift */,
+				6245E9201EB7D69D006666BA /* MyRepositoriesVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				623C8DDF1EA90433009F7734 /* AuthorizationVC.swift in Sources */,
 				620703BC1EAF7AE800A462C9 /* Search.swift in Sources */,
 				623C8DDD1EA90433009F7734 /* AppDelegate.swift in Sources */,
+				6245E9211EB7D69D006666BA /* MyRepositoriesVC.swift in Sources */,
 				623C8DF71EABA7C4009F7734 /* Authorization.swift in Sources */,
 				620703BE1EAFF13200A462C9 /* Constants.swift in Sources */,
 			);

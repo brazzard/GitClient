@@ -15,7 +15,7 @@ class Search: UIViewController {
     @IBOutlet var SearchOutlet: UITextField!
     @IBAction func SearchField(_ sender: Any, forEvent event: UIEvent) {
         delay?.invalidate()
-        delay = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(self.timerDelay), userInfo: nil, repeats: false)
+        delay = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.timerDelay), userInfo: nil, repeats: false)
         
     }
     
@@ -28,7 +28,15 @@ class Search: UIViewController {
         })
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+        
+    }
+    
+    
     override func viewDidLoad() {
+        
+        self.navigationController?.isNavigationBarHidden = true
         
     }
     
